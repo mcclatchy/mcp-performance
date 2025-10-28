@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "mcpServers": {
     "performance": {
-      "command": "node",
-      "args": ["${extensionPath}${/}server.js"]
+      "command": "npm",
+      "args": ["start"]
     }
   },
   "contextFileName": "GEMINI.md"
