@@ -1,5 +1,5 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import puppeteer from "puppeteer-core";
 import { z } from "zod";
 
 // Establish the MCP server
@@ -27,8 +27,10 @@ server.registerTool(
   },
   async ({ url, mark }) => {
     // Start the browser
-    const puppeteer = await import('puppeteer');
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ 
+      headless: false, 
+      executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' 
+    });
     const page = await browser.newPage();
     const timeout = 10000;
 
@@ -71,7 +73,5 @@ server.registerTool(
   }
 );
 
-// Create a transport and connect
-const transport = new StdioServerTransport();
-await server.connect(transport);
-console.log("MCP Server: Stdio transport initialized and listening...");
+// Export the server
+export default server;
