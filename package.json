@@ -1,14 +1,14 @@
 {
-  "name": "gemini-cli-performance",
+  "name": "mcp-performance",
   "version": "1.2.2",
   "description": "A Gemini CLI extension to analyze web page performance",
-  "homepage": "https://github.com/mcclatchy/gemini-cli-performance#readme",
+  "homepage": "https://github.com/mcclatchy/mcp-performance#readme",
   "bugs": {
-    "url": "https://github.com/mcclatchy/gemini-cli-performance/issues"
+    "url": "https://github.com/mcclatchy/mcp-performance/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcclatchy/gemini-cli-performance.git"
+    "url": "git+https://github.com/mcclatchy/mcp-performance.git"
   },
   "license": "MIT",
   "author": "McClatchy",

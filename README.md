@@ -1,2 +1,2 @@
-# gemini-cli-performance
-A Gemini CLI extension to analyze web page performance
+# mcp-performance
+A Gemini CLI extension and MCP server to analyze web page performance

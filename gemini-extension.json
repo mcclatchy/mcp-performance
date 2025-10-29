@@ -5,7 +5,7 @@
     "performance": {
       "command": "npx",
       "args": [
-        "github:mcclatchy/gemini-cli-performance"
+        "github:mcclatchy/mcp-performance"
       ]
     }
   },
