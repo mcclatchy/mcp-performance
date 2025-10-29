@@ -16,8 +16,7 @@
   "bin": "./mcp/stdio.js",
   "scripts": {
     "start": "node server.js",
-    "version": "node scripts/update-version.js",
-    "postversion": "git add gemini-extension.json"
+    "preversion": "node scripts/update-version.js && git add gemini-extension.json"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.2",
