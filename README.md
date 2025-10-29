@@ -14,7 +14,7 @@ npx github:mcclatchy/mcp-performance
 This project can be installed as a Gemini CLI extension. To install it, use the following command:
 
 ```bash
-gemini extensions install github:mcclatchy/mcp-performance
+gemini extensions install https://github.com/mcclatchy/mcp-performance
 ```
 
 ## Local Development
