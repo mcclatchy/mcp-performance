@@ -12,5 +12,4 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
  */
 
 const transport = new StdioServerTransport();
-console.log(`MCP Server: Stdio transport initialized and listening...`);
 await server.connect(transport);
