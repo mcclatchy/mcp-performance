@@ -3,9 +3,7 @@ A Gemini CLI extension and MCP server to analyze web page performance
 
 ## Gemini CLI Extension
 
-This project can be installed as a Gemini CLI extension and is the intended usage. This will include both the MCP server and commands for consistent AI responses.
-
-To install it, use the following command:
+This project can be installed as a Gemini CLI extension and is the intended usage. This will include both the MCP server and commands for consistent AI responses. To install it, use the following command:
 
 ```bash
 gemini extensions install https://github.com/mcclatchy/mcp-performance
@@ -13,12 +11,12 @@ gemini extensions install https://github.com/mcclatchy/mcp-performance
 
 ## MCP Server
 
-This project can also be run as a standalone MCP server. This is useful for developers who want to use this tool with other MCP clients, such as `mcp-inspector`, or other LLM clients like Claude. When configuring for those clients use the following:
+This project can also be run as a standalone MCP server. This is useful for developers who want to use this tool with other MCP clients, such as [mcp-inspector](https://modelcontextprotocol.io/docs/tools/inspector), or other LLM clients like Claude. When configuring for those clients use the following values for the JSON properties:
 
-| Field | Value |
+| Property | Value |
 | ----- | ----- |
 | command | npx |
-| arguments | github:mcclatchy/mcp-performance | 
+| args | github:mcclatchy/mcp-performance | 
 
 ## Local Development
 
