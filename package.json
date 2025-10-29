@@ -15,7 +15,7 @@
   "type": "module",
   "bin": "./mcp/stdio.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node mcp/stdio.js",
     "version": "node scripts/update-version.js && git add gemini-extension.json"
   },
   "dependencies": {
