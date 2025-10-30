@@ -3,13 +3,13 @@ A Gemini CLI extension and MCP server to analyze web page performance
 
 ## Gemini CLI Extension
 
-This project can be installed as a Gemini CLI extension and is the intended usage. This will include both the MCP server and commands for consistent AI responses. To install it, use the following command:
+This project is intended to be installed as a Gemini CLI extension. This will include both the MCP server and commands for consistent AI responses. To install it, use the following command:
 
 ```bash
 gemini extensions install https://github.com/mcclatchy/mcp-performance
 ```
 
-After installing you will have access to a performance MCP server as well as commands we have created to assist you. Commands begin with the `/` character, such as `/performance-analysis`, and will be visible in the client. These commands will automatically pull performance data using the MCP server. If you would like to pull performance data for a different conversation you can initiate the MCP tool directly in a prompt. This pattern works consistently but is not required:
+After installing, you will have access to a performance MCP server as well as commands that we have created to assist you. Commands begin with the `/` character, such as `/performance-analysis`, and will be visible in the client. These commands will automatically pull performance data using the MCP server. If you would like to pull performance data for a different conversation, you can initiate the MCP tool directly in a prompt. This direct invocation pattern works consistently but is not strictly necessary when using the Gemini CLI commands:
 
 ```
 `performance-entries` --url="https://www.coralspringsflnews.com" --mark="flex first rendered"
@@ -17,13 +17,15 @@ After installing you will have access to a performance MCP server as well as com
 
 ## MCP Server
 
-This project can also be run as a standalone MCP server. This is useful for developers who want to use this tool with other MCP clients, such as [mcp-inspector](https://modelcontextprotocol.io/docs/tools/inspector), or other LLM clients like Claude. When configuring for those clients use the following command and arguments:
+This project can also be run as a standalone MCP server. This is useful for developers who want to use this tool with other MCP clients, such as [mcp-inspector](https://modelcontextprotocol.to/docs/tools/inspector), or other LLM clients like Claude. To run the server for these clients, use the following command:
 
 ```
 npx github:mcclatchy/mcp-performance
 ```
 
-*Note: you do not need to use this command if using Gemini CLI.*
+For local development and testing with the Gemini CLI, please refer to the "Local Development" section and use `npm start`.
+
+*Note: you do not need to use the `npx` command if using Gemini CLI.*
 
 ## Local Development
 
